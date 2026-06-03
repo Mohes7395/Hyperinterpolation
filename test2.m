@@ -2,24 +2,7 @@ clear; clc; close all
 
 %% =========================================================================
 %  TEST 2 — FRANKE FUNCTION  (dim = 2)   [corrected]
-%
-%  Changes vs the previous version, none of which enlarge the linear systems:
-%   (1) Sobolev order tau corrected for d=2:  tau = nu + d/2.
-%         LMatern (nu=3/2) -> tau = 5/2 ;  QMatern (nu=5/2) -> tau = 7/2.
-%       Hyperinterp reference slope Eq.(19): -(tau-d/2)/d = -(tau-1)/2
-%         LMatern: -3/4 ;  QMatern: -5/4.
-%   (2) Lebesgue constant computed through the SAME truncated-SVD
-%       pseudoinverse used for the coefficients (leb_svd.m), not via the
-%       squared normal matrix VZ'*W*VZ. Removes kappa^2 contamination.
-%   (3) getCF diagnostics captured (achieved rank r, target K, BG residual)
-%       so we can report honestly whether full exactness was actually
-%       reached or silently reduced to the numerical-rank subspace.
-%
-%  NOTE on full exactness: dim(V_n x V_n) = 1 + n + n(n+1)/2 = O(n^2).
-%  At large n this is not solvable on a workstation; N_init = O(n) here
-%  CANNOT reach it. The run therefore reports "full" as exactness on the
-%  achieved numerical-rank subspace. The reduced scheme (Section 3.7) is
-%  the intended scalable method and is the fair object to foreground.
+
 % =========================================================================
 
 %% -------------------------------------------------------------------------
