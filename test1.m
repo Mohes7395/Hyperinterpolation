@@ -11,8 +11,6 @@ clear; clc; close all
 %  Lebesgue constant is unchanged (computed from cardinal functions via a
 %  square Cholesky solve, which is not affected by normal-equation squaring).
 %
-%  All other settings — kernels, tau, n grid, shape parameter, solver,
-%  grid sizes — are identical to the previous version.
 % =========================================================================
 
 %% -------------------------------------------------------------------------
