@@ -5,11 +5,7 @@ clear; clc; close all
 %
 %  Lebesgue constants for the three projection methods (LS, Hyper Full,
 %  Hyper Reduced) are now computed through the SAME truncated-SVD
-%  pseudoinverse used to form the coefficients (leb_svd.m), instead of the
-%  squared normal matrix VZ'*W*VZ. This removes the kappa^2 amplification
-%  that previously contaminated the Lebesgue estimate. The interpolation
-%  Lebesgue constant is unchanged (computed from cardinal functions via a
-%  square Cholesky solve, which is not affected by normal-equation squaring).
+%  pseudoinverse used to form the coefficients (leb_svd.m).
 %
 % =========================================================================
 
