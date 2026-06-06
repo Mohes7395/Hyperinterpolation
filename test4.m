@@ -5,10 +5,7 @@ clear; clc; close all
 %
 %  Lebesgue constants for ALL projection methods (polynomial hyper, kernel
 %  Hyper Full, kernel Hyper Reduced) computed through the SAME truncated-SVD
-%  pseudoinverse used for the coefficients (leb_svd.m), not via the squared
-%  normal matrix VtWV. Removes kappa^2 contamination in the kernel methods.
-%
-%  All other settings unchanged.
+%  pseudoinverse used for the coefficients (leb_svd.m),
 % =========================================================================
 
 %% -------------------------------------------------------------------------
