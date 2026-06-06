@@ -6,12 +6,7 @@ clear; clc; close all
 %  Lebesgue constants for ALL projection methods (polynomial hyper, kernel
 %  Hyper Full, kernel Hyper Reduced) are computed through the SAME
 %  truncated-SVD pseudoinverse used to form the coefficients (leb_svd.m),
-%  rather than via the squared normal matrix VtWV. For the polynomial method
-%  this leaves the result essentially unchanged (the Gauss-Legendre weighted
-%  Legendre matrix is already well-conditioned); for the kernel methods it
-%  removes the kappa^2 amplification that previously produced spurious spikes.
 %
-%  All other settings unchanged.
 % =========================================================================
 
 %% -------------------------------------------------------------------------
